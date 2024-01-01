@@ -4,7 +4,7 @@ Introduces los numeros binarios
 <br><hr><br>
 # ADVERTENCIA
 La calculadora binaria tiene un fallo en la parte de la division
-Por ejemplo si tu intentas dividir los numeros binarios 1010 y 11 '10/3 en formato decimal' el programa crashea porque el resto es uno
+Por ejemplo si tu intentas dividir los numeros binarios 1010 y 11 (10/3 en formato decimal) el programa crashea porque el resto es uno
 ¿Alguien puede ayudarme a arreglar este problema?
 
 <br><br>
@@ -12,5 +12,5 @@ Por ejemplo si tu intentas dividir los numeros binarios 1010 y 11 '10/3 en forma
 <br><hr><br>
 # WARNING
 The binary caluclator have a glitch on the part of the division
-For example: if you try to split the binary numbers 1010 and 11 "10/3 decimal format" the program crash becasue the remainder is 1
+For example: if you try to split the binary numbers 1010 and 11 (10/3 decimal format) the program crash becasue the remainder is 1
 who can you help me to solve this problem?
