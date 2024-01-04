@@ -114,8 +114,13 @@ def crear_multiplicacion_binaria(numero1,numero2):
     crear_repeticion= "".join(map(str,numero_repeticion))
     repeticion=int(crear_repeticion, 2)
     for _ in range(repeticion-2):
-        numero5=numero1
-        numero6=list(map(int,str(binario)))
+        introducirnumero5 = list(map(int,str(binario)))
+        introducirnumero6 = numero1
+        introducirnumero6=[0] * (len(introducirnumero5) - len(introducirnumero6)) + introducirnumero6
+        crearnumero5="".join(map(str,introducirnumero5))
+        crearnumero6="".join(map(str,introducirnumero6))
+        numero5=list(map(int,str(crearnumero5)))
+        numero6=list(map(int,str(crearnumero6)))
         binario=repetir_suma_binaria_en_multiplicacion_binaria(numero5,numero6)
     return binario
 
@@ -186,6 +191,10 @@ def repetir_suma_binaria_en_multiplicacion_binaria(numero5, numero6):
             acarreo = 1
     if numero5[0] == 1 and numero6[0] == 1:
         resultado.insert(0,1)
+    elif numero5[1] == 1 and numero6[1] == 1:
+        resultado.insert(0,1)
+    else:
+        resultado.insert(0,0)
     binario = "".join(map(str,resultado))
     return binario
 
@@ -197,7 +206,12 @@ def crear_division_binaria(numero1,numero2):
     if decimal==0 or decimal==1:
         cociente=len(repeticiones)
         resto=decimal
-        return cociente, resto
+        if decimal == 0:
+            resto=decimal+1
+            return cociente, resto
+        elif decimal == 1:
+            resto=decimal+1
+            return cociente, resto
     else:
         while decimal!=0 or decimal!=1:
             numero3=list(map(int,str(binario)))
@@ -207,8 +221,12 @@ def crear_division_binaria(numero1,numero2):
             decimal=int(binario, 2)
             if decimal==0 or decimal==1:
                 cociente=len(repeticiones)
-                resto=decimal
-                return cociente, resto
+                if decimal == 0:
+                    resto=decimal+1
+                    return cociente, resto
+                elif decimal == 1:
+                    resto=decimal+1
+                    return cociente, resto
 
 def crear_resta_binaria_en_division_binaria(numero1, numero2):
     resultado = [0] * len(numero1)
