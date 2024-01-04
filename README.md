@@ -1,16 +1,19 @@
 # calculadora binaria (binary calculator)
-"ES": Esta es una calculadora que suma, resta, multiplica y divide números binarios usando el método de reagrupación y luego convierte el resultado binario en el resultado decimal.
-Introduces los numeros binarios
-<br><hr><br>
-# ADVERTENCIA
-La calculadora binaria tiene un fallo en la parte de la division
-Por ejemplo si tu intentas dividir los numeros binarios 1010 y 11 (10/3 en formato decimal) el programa crashea porque el resto es uno
-¿Alguien puede ayudarme a arreglar este problema?
+# "EN IDIOMA ESPAÑOL"
+Esta es una calculadora que suma, resta, multiplica y divide números binarios usando el método de reagrupación y luego convierte el resultado binario en el resultado decimal.
 
-<br><br>
-"EN": This is a calculator that adds, subtracts, multiplies, and divides binary numbers using the regrouping method and then converts the binary result into into the decimal result.
-<br><hr><br>
-# WARNING
+ADVERTENCIA
+La calculadora binaria tiene un fallo en la parte de la division
+Por ejemplo si tu intentas dividir los numeros binarios 1010 y 11 (10/3 en formato decimal) el programa crashea porque el resto es 1
+¿Alguien puede ayudarme a arreglar este problema?
+<hr>
+
+# "IN ENGLISH LANGUAGE"
+This is a calculator that adds, subtracts, multiplies, and divides binary numbers using the regrouping method and then converts the binary result into into the decimal result.
+
+WARNING
 The binary caluclator have a glitch on the part of the division
-For example: if you try to split the binary numbers 1010 and 11 (10/3 decimal format) the program crash becasue the remainder is 1
+For example: if you try to split the binary numbers 1010 and 11 (10/3 in decimal format) the program crash becasue the remainder is 1
 who can you help me to solve this problem?
+
+By the way the code of the program is made in spanish language
