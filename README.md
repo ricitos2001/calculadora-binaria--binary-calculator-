@@ -4,7 +4,7 @@ Esta es una calculadora que suma, resta, multiplica y divide números binarios u
 
 ADVERTENCIA
 La calculadora binaria tiene un fallo en la parte de la division
-Por ejemplo si tu intentas dividir los numeros binarios 1010 y 11 (10/3 en formato decimal) el programa crashea porque el resto es 1
+Por ejemplo si tu intentas dividir los numeros binarios 1010 y 11 (10/3 en formato decimal) el programa crashea porque el cociente es el numero decimal periodico puro 3,3
 ¿Alguien puede ayudarme a arreglar este problema?
 <hr>
 
