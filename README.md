@@ -13,7 +13,7 @@ This is a calculator that adds, subtracts, multiplies, and divides binary number
 
 WARNING
 The binary caluclator have a glitch on the part of the division
-For example: if you try to split the binary numbers 1010 and 11 (10/3 in decimal format) the program crash becasue the remainder is 1
+For example: if you try to split the binary numbers 1010 and 11 (10/3 in decimal format) the program crash becasue the quotient is the pure periodic decimal number 3,3
 who can you help me to solve this problem?
 
 By the way the code of the program is made in spanish language

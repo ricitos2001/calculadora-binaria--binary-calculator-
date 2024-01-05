@@ -1,6 +1,3 @@
-
-#?ERRORES REPARADOS PERO LA DIVISION FALLA SI EL RESTO ES 1
-
 import os
 import sys
 
@@ -206,27 +203,23 @@ def crear_division_binaria(numero1,numero2):
     if decimal==0 or decimal==1:
         cociente=len(repeticiones)
         resto=decimal
-        if decimal == 0:
-            resto=decimal+1
-            return cociente, resto
-        elif decimal == 1:
-            resto=decimal+1
-            return cociente, resto
+        return cociente, resto
     else:
         while decimal!=0 or decimal!=1:
-            numero3=list(map(int,str(binario)))
-            numero4=numero2
+            introducirnumero3 = list(map(int,str(binario)))
+            introducirnumero4 = numero2
+            introducirnumero4=[0] * (len(introducirnumero3) - len(introducirnumero4)) + introducirnumero4
+            crearnumero3="".join(map(str,introducirnumero3))
+            crearnumero4="".join(map(str,introducirnumero4))
+            numero3=list(map(int,str(crearnumero3)))
+            numero4=list(map(int,str(crearnumero4)))
             binario=repetir_resta_binaria_en_division_binaria(numero3,numero4)
             repeticiones.append(binario)
             decimal=int(binario, 2)
             if decimal==0 or decimal==1:
                 cociente=len(repeticiones)
-                if decimal == 0:
-                    resto=decimal+1
-                    return cociente, resto
-                elif decimal == 1:
-                    resto=decimal+1
-                    return cociente, resto
+                resto=decimal
+                return cociente, resto
 
 def crear_resta_binaria_en_division_binaria(numero1, numero2):
     resultado = [0] * len(numero1)
